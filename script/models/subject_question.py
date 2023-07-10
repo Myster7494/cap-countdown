@@ -16,7 +16,5 @@ class SubjectQuestion(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def to_dict(
-        self,
-    ) -> dict[str, str | int | float | list[dict[str, str | int | float]] | None]:
+    def to_dict(self) -> dict[str, any]:
         pass
