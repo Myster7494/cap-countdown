@@ -21,7 +21,7 @@ jobs:
       - name: Build Web
         run: |
           flutter pub get
-          flutter build web --release --base-href=/cap-countdown/
+          flutter build web --release --base-href=/cap-countdown/ --web-renderer canvaskit
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
